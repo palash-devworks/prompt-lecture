@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Container, Box, Tabs, Tab } from '@mui/material';
+import HomePage from './pages/HomePage';
 import KeywordsPage from './pages/KeywordsPage';
 import ProblemsPage from './pages/ProblemsPage';
 import TechniquesPage from './pages/TechniquesPage';
@@ -10,7 +11,8 @@ function NavigationTabs() {
   const currentPath = location.pathname;
   
   const routes = [
-    { label: 'Keywords', path: '/' },
+    { label: 'Home', path: '/' },
+    { label: 'Keywords', path: '/keywords' },
     { label: 'Problems', path: '/problems' },
     { label: 'Techniques', path: '/techniques' }
   ];
@@ -64,7 +66,8 @@ function App() {
         </AppBar>
         
         <Routes>
-          <Route path="/" element={<KeywordsPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/keywords" element={<KeywordsPage />} />
           <Route path="/problems" element={<ProblemsPage />} />
           <Route path="/techniques" element={<TechniquesPage />} />
         </Routes>
