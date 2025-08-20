@@ -113,7 +113,7 @@ const KeywordCard = ({ keyword }) => {
         <Button 
           variant="outlined" 
           onClick={handleToggle}
-          sx={{ mt: 'auto' }}
+          sx={{ mt: 'auto', width: '20%', alignSelf: 'center' }}
         >
           {isRevealed ? 'Hide Details' : 'Show Details'}
         </Button>

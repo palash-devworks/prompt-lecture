@@ -114,9 +114,9 @@ export default function TechniquesPage() {
         </Typography>
         <Grid container spacing={2}>
           {principles.map((principle, index) => (
-            <Grid item xs={12} md={6} key={index}>
-              <Card sx={{ height: '100%', border: '1px solid', borderColor: 'grey.200' }}>
-                <CardContent>
+            <Grid item xs={12} md={6} key={index} sx={{ width: '100%' }}>
+              <Card sx={{ height: '100%', width: '100%', border: '1px solid', borderColor: 'grey.200' }}>
+                <CardContent sx={{ p: 3 }}>
                   <Typography variant="h6" component="h3" gutterBottom sx={{ fontWeight: 600 }}>
                     {index + 1}. {principle.split(' - ')[0]}
                   </Typography>
@@ -190,7 +190,7 @@ export default function TechniquesPage() {
           {scenarios.map((scenario, index) => (
             <Grid item xs={12} md={6} key={index}>
               <Card sx={{ height: '100%', border: '1px solid', borderColor: 'grey.200' }}>
-                <CardContent>
+                <CardContent sx={{ p: 3 }}>
                   <Typography variant="h6" component="h3" gutterBottom sx={{ fontWeight: 600, color: 'primary.main' }}>
                     {scenario.scenario}
                   </Typography>
@@ -209,10 +209,10 @@ export default function TechniquesPage() {
           Quick Reference Card
         </Typography>
         <Card sx={{ border: '1px solid', borderColor: 'grey.200' }}>
-          <CardContent>
-            <Grid container spacing={2}>
+          <CardContent sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+            <Grid container spacing={2} sx={{ width: '100%' }}>
               {quickReference.map((ref, index) => (
-                <Grid item xs={12} md={6} lg={4} key={index}>
+                <Grid item xs={12} md={6} lg={4} key={index} sx={{ width: '100%' }}>
                   <Box sx={{ p: 2, border: '1px solid', borderColor: 'grey.300', borderRadius: 1 }}>
                     <Chip label={ref.scenario} size="small" color="primary" sx={{ mb: 1 }} />
                     <Typography variant="body2" gutterBottom>
@@ -229,13 +229,13 @@ export default function TechniquesPage() {
         </Card>
       </Box>
 
-      <Box sx={{ p: 3, backgroundColor: 'error.light', borderRadius: 2, color: 'error.contrastText' }}>
+      <Box sx={{ mt: 6, p: 3, backgroundColor: 'error.light', borderRadius: 2, color: 'error.contrastText' }}>
         <Typography variant="h5" gutterBottom>
           Common Mistakes to Avoid
         </Typography>
         <Grid container spacing={2}>
           {mistakes.map((mistake, index) => (
-            <Grid item xs={12} md={6} key={index}>
+            <Grid item xs={12} md={6} key={index} sx={{ width: '100%' }}>
               <Box>
                 <Typography variant="body2" gutterBottom>
                   <strong>❌ {mistake.mistake}</strong>
