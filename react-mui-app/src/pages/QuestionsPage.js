@@ -3,7 +3,7 @@ import { Container, CircularProgress, Alert, Box } from '@mui/material';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
-export default function TechniquesPage() {
+export default function QuestionsPage() {
   const [markdownContent, setMarkdownContent] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -12,14 +12,14 @@ export default function TechniquesPage() {
     const loadMarkdown = async () => {
       try {
         setLoading(true);
-        const response = await fetch('/prompting-techniques.md');
+        const response = await fetch('/questions-only.md');
         if (!response.ok) {
           throw new Error(`Failed to load markdown: ${response.status}`);
         }
         const content = await response.text();
         setMarkdownContent(content);
       } catch (err) {
-        setError('Error loading techniques: ' + err.message);
+        setError('Error loading questions: ' + err.message);
       } finally {
         setLoading(false);
       }
