@@ -2,9 +2,8 @@
 
 ## Instructions
 - **Time limit**: 90 minutes total (45 minutes per round)
-- **Choose your track**: Product or Business
-- **Goal**: Experience dramatic improvement from baseline to advanced prompting
-- Each exercise targets 9.0+ impact score (immediate applicability, transformative results)
+- **Choose your track**: Product or Business or Both
+- **Submission**: Submit only your prompts or sequence of prompts for the question in provided Google Forms
 
 ---
 

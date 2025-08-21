@@ -15,7 +15,7 @@ function NavigationTabs() {
     { label: 'Home', path: '/' },
     { label: 'Keywords', path: '/keywords' },
     { label: 'Techniques', path: '/techniques' },
-    { label: 'Questions', path: '/questions' },
+    { label: 'Business Challenges', path: '/business-challenges' },
     { label: 'Engineering Practice', path: '/engineering-problems' }
   ];
   
@@ -49,11 +49,12 @@ function App() {
     <Router>
       <Box sx={{ minHeight: '100vh', backgroundColor: 'background.default' }}>
         <AppBar 
-          position="static" 
+          position="fixed" 
           elevation={1}
           sx={{ 
             backgroundColor: 'primary.main',
-            color: 'primary.contrastText'
+            color: 'primary.contrastText',
+            zIndex: (theme) => theme.zIndex.drawer + 1
           }}
         >
           <Container maxWidth="lg">
@@ -67,13 +68,15 @@ function App() {
           </Container>
         </AppBar>
         
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/keywords" element={<KeywordsPage />} />
-          <Route path="/techniques" element={<TechniquesPage />} />
-          <Route path="/questions" element={<QuestionsPage />} />
-          <Route path="/engineering-problems" element={<EngineeringProblemsPage />} />
-        </Routes>
+        <Box sx={{ pt: 8 }}> {/* Add padding-top to account for fixed AppBar */}
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/keywords" element={<KeywordsPage />} />
+            <Route path="/techniques" element={<TechniquesPage />} />
+            <Route path="/business-challenges" element={<QuestionsPage />} />
+            <Route path="/engineering-problems" element={<EngineeringProblemsPage />} />
+          </Routes>
+        </Box>
       </Box>
     </Router>
   );
