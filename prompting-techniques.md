@@ -13,7 +13,7 @@ Give context, be specific about what you want, and set boundaries. Don't assume 
 ### **2. Structure Your Requests**
 Use clear sections, examples, and constraints. Think: "If I handed this to a new teammate, would they understand exactly what to do?"
 
-### **3. Context + Examples + Boundaries = Success**
+### **3. Context + Examples + Guardrails = Success**
 The AI needs your tech stack, coding standards, desired output format, and explicit constraints. Feed it the right information in the right structure.
 
 ---
@@ -65,7 +65,7 @@ The AI needs your tech stack, coding standards, desired output format, and expli
 **Example**: "Work step-by-step. This is important for our production deployment: Analyze this Kubernetes configuration for security vulnerabilities and suggest fixes."
 **When to use**: High-stakes tasks, initial problem solving, when examples aren't available
 
-### **10. Set Clear Boundaries**
+### **10. Set Clear Guardrails**
 **Template**: "[Task] but don't [constraint 1], must [requirement], prioritize [priority]"
 **Example**: "Optimize this React component but don't change the API interface, must maintain accessibility, prioritize rendering performance over bundle size."
 **When to use**: Code optimization, architecture changes, constrained environments
@@ -77,7 +77,7 @@ The AI needs your tech stack, coding standards, desired output format, and expli
 | **Scenario** | **Best Technique** | **Key Phrase** |
 |-------------|-------------------|----------------|
 | **Bug fixing** | #1 Be Specific + #3 Chain of Thought | "This should do X but does Y. Debug step by step..." |
-| **Code review** | #2 Set Role + #10 Boundaries | "You are a senior engineer, focus on... but don't..." |
+| **Code review** | #2 Set Role + #10 Guardrails | "You are a senior engineer, focus on... but don't..." |
 | **New feature** | #4 Few-Shot + #5 Progressive | "Here are examples... Start basic, then add..." |
 | **Learning** | #7 Meta + #9 Zero-Shot | "First identify the problem type, then solve..." |
 | **Critical issues** | #8 Self-Consistency | "Solve using 3 approaches, compare results..." |
@@ -132,7 +132,7 @@ Work step-by-step. This is important for our performance goals."
 ✓ **Template Usage**: Am I following the proven template structure?  
 ✓ **Context**: Have I provided tech stack, constraints, and system info?  
 ✓ **Examples**: For patterns/consistency, have I shown desired format?  
-✓ **Boundaries**: Have I specified what NOT to do and priorities?  
+✓ **Guardrails**: Have I specified what NOT to do and priorities?  
 ✓ **Combinations**: For complex tasks, am I using 2-3 complementary techniques?  
 
 The goal is predictable, useful output that saves you time instead of creating more work.

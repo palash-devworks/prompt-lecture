@@ -107,7 +107,7 @@ function validateLogin(req, res, next) {
 // Body: { items: [{productId, quantity}], shippingAddress }
 // Returns: { orderId, total, estimatedDelivery } or error`,
     language: "javascript",
-    technique: "Set Clear Boundaries",
+    technique: "Set Clear Guardrails",
     basicPrompt: "Document this API endpoint",
     improvedPrompt: "Write API documentation for this order creation endpoint but focus only on request/response format and example payloads, don't include implementation details, must follow OpenAPI 3.0 format for our existing docs."
   },
@@ -137,7 +137,7 @@ function validateLogin(req, res, next) {
     description: "Select database for a new analytics dashboard feature",
     context: "Building user behavior analytics dashboard showing page views, click patterns, and conversion funnels. Expecting 1M events per day, read-heavy workload with complex aggregations. Current stack uses PostgreSQL for transactional data.",
     language: "text",
-    technique: "Set Role and Context + Set Clear Boundaries",
+    technique: "Set Role and Context + Set Clear Guardrails",
     basicPrompt: "What database should I use for analytics?",
     improvedPrompt: "You are a data engineer choosing analytics database for 1M events/day, read-heavy dashboard with complex aggregations. Compare options but don't suggest complete infrastructure overhaul, must integrate with existing PostgreSQL system, prioritize query performance over write speed."
   },
@@ -149,7 +149,7 @@ function validateLogin(req, res, next) {
     code: `// Current user service error format example:
 {error: 'USER_NOT_FOUND', message: 'User does not exist', code: 404}`,
     language: "javascript",
-    technique: "Give Examples + Set Clear Boundaries",
+    technique: "Give Examples + Set Clear Guardrails",
     basicPrompt: "Standardize error handling across services",
     improvedPrompt: "Here's our current user service error format: `{error: 'USER_NOT_FOUND', message: 'User does not exist', code: 404}`. Design standardized error handling for all 5 microservices following this structure but don't change existing API contracts, must be backward compatible, include error classification system."
   }
@@ -161,10 +161,10 @@ const techniqueColors = {
   "Inject Relevant Context": "success",
   "Set Role and Context": "warning",
   "Give Examples": "info",
-  "Set Clear Boundaries": "error",
+  "Set Clear Guardrails": "error",
   "Break Down Complex Tasks": "default",
-  "Set Role and Context + Set Clear Boundaries": "warning",
-  "Give Examples + Set Clear Boundaries": "info"
+  "Set Role and Context + Set Clear Guardrails": "warning",
+  "Give Examples + Set Clear Guardrails": "info"
 };
 
 export default function ProblemsPage() {

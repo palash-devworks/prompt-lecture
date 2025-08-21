@@ -134,7 +134,7 @@ function validateLogin(req, res, next) {
 // Returns: { orderId, total, estimatedDelivery } or error
 ```
 
-**Technique to Apply**: Set Clear Boundaries
+**Technique to Apply**: Set Clear Guardrails
 
 **Sample Improved Prompt**:
 "Write API documentation for this order creation endpoint but focus only on request/response format and example payloads, don't include implementation details, must follow OpenAPI 3.0 format for our existing docs."
@@ -173,7 +173,7 @@ Adding chat to an existing React/Node.js e-commerce platform. Need to support cu
 **Context**:
 Building user behavior analytics dashboard showing page views, click patterns, and conversion funnels. Expecting 1M events per day, read-heavy workload with complex aggregations. Current stack uses PostgreSQL for transactional data.
 
-**Technique to Apply**: Set Role and Context + Set Clear Boundaries
+**Technique to Apply**: Set Role and Context + Set Clear Guardrails
 
 **Sample Improved Prompt**:
 "You are a data engineer choosing analytics database for 1M events/day, read-heavy dashboard with complex aggregations. Compare options but don't suggest complete infrastructure overhaul, must integrate with existing PostgreSQL system, prioritize query performance over write speed."
@@ -186,7 +186,7 @@ Building user behavior analytics dashboard showing page views, click patterns, a
 **Context**:
 Team has 5 Node.js microservices (user management, orders, inventory, payments, notifications) with inconsistent error responses causing frontend integration issues. Some return strings, others objects, different status codes for similar errors.
 
-**Technique to Apply**: Give Examples + Set Clear Boundaries
+**Technique to Apply**: Give Examples + Set Clear Guardrails
 
 **Sample Improved Prompt**:
 "Here's our current user service error format: `{error: 'USER_NOT_FOUND', message: 'User does not exist', code: 404}`. Design standardized error handling for all 5 microservices following this structure but don't change existing API contracts, must be backward compatible, include error classification system."

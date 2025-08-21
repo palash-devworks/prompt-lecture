@@ -120,7 +120,7 @@ setInterval(() => eventEmitter.emit('data', '...'), 1000);`,
     language: "Text",
     icon: ArchitectureIcon,
     context: "Microservice Name: 'notification-service'. Language: Node.js with Express. Features: Send emails via SendGrid, connect to a RabbitMQ queue for events.",
-    technique: "Set Clear Boundaries",
+    technique: "Set Clear Guardrails",
     basicPrompt: "Create a Node.js microservice.",
     improvedPrompt: "Generate the file and folder structure for a Node.js Express microservice named 'notification-service'. The structure should include directories for 'config', 'controllers', 'services', and 'utils'. Include a 'package.json' with necessary dependencies like 'express', 'amqplib', and '@sendgrid/mail'. Do not write the full implementation, just the file structure and placeholder files."
   },
@@ -170,7 +170,7 @@ setInterval(() => eventEmitter.emit('data', '...'), 1000);`,
     language: "Text",
     icon: ArchitectureIcon,
     context: "Application: A simple blog platform. Frontend: React. Backend: Node.js with Express. Database: MongoDB. The goal is a clean separation of concerns.",
-    technique: "Set Clear Boundaries",
+    technique: "Set Clear Guardrails",
     basicPrompt: "What's a good folder structure for a web app?",
     improvedPrompt: "Design a folder structure for a full-stack MERN (MongoDB, Express, React, Node.js) application. The structure should have a root directory with separate 'client' and 'server' folders. Show the key subdirectories within each, such as 'client/src/components', 'client/src/pages', 'server/models', 'server/controllers', etc. Do not include individual file names, only the directory structure."
   },
@@ -299,7 +299,7 @@ def process_large_dataset(filename):
     language: "Text",
     icon: ArchitectureIcon,
     context: "Package Name: 'datainsights'. Features: Data cleaning, statistical analysis, and report generation. Will be published to PyPI. Needs CLI interface and web dashboard.",
-    technique: "Set Clear Boundaries",
+    technique: "Set Clear Guardrails",
     basicPrompt: "Create a Python package structure.",
     improvedPrompt: "Design a Python package structure for 'datainsights' following PEP 518 standards. Include directories for source code, tests, documentation, and CLI. Show the file layout but don't include implementation details, must be PyPI-ready with proper setup.py/pyproject.toml, include type hints structure, and separate web dashboard as optional extra."
   },
@@ -360,7 +360,7 @@ def render_template():
     language: "Text",
     icon: ArchitectureIcon,
     context: "Application: Real-time analytics platform. Services needed: Data ingestion (Kafka), processing (ML models), storage (PostgreSQL/Redis), and API (FastAPI). Expected load: 10k requests/second.",
-    technique: "Set Clear Boundaries",
+    technique: "Set Clear Guardrails",
     basicPrompt: "Design Python microservices architecture.",
     improvedPrompt: "Design a Python microservices architecture for real-time analytics handling 10k req/s. Show service boundaries and communication patterns but don't include deployment details, must use async Python frameworks, prioritize horizontal scalability over complex patterns, and separate ML model serving from data processing services."
   },
@@ -385,7 +385,7 @@ const techniqueColors = {
   "Inject Relevant Context": "success",
   "Set Role and Context": "warning",
   "Give Examples": "info",
-  "Set Clear Boundaries": "error",
+  "Set Clear Guardrails": "error",
   "Break Down Complex Tasks": "default"
 };
 

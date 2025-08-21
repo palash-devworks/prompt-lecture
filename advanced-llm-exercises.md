@@ -29,7 +29,7 @@ Competition: Competitor launching similar feature in May
 - **#2 Set Role and Context**: "You are an accountable leader managing crisis communication to multiple stakeholder groups..."
 - **#6 Break Down Complex Tasks**: Separate CEO email, customer notice, team message into distinct prompts with specific outcomes
 - **#3 Chain of Thought**: "Analyze step by step: 1) Timeline impact assessment 2) Root cause explanation 3) Control demonstration 4) Competitive advantage reframe"
-- **#10 Set Clear Boundaries**: "Focus on accountability and user safety, don't blame team members or make defensive excuses"
+- **#10 Set Clear Guardrails**: "Focus on accountability and user safety, don't blame team members or make defensive excuses"
 
 **Enhanced Prompt**:
 
@@ -259,7 +259,7 @@ Technical Constraints:
 **Techniques to Apply**:
 - **#1 Be Specific About the Task**: "Transform vague 'better reporting' request into specific user stories with clear acceptance criteria and business value"
 - **#6 Break Down Complex Tasks**: "Step 1: Requirements discovery through targeted questions, Step 2: User story creation with acceptance criteria, Step 3: Scope definition with timeline"
-- **#10 Set Clear Boundaries**: "Focus on manager visibility needs, don't expand to executive dashboards, must integrate with current data sources, prioritize actionable insights"
+- **#10 Set Clear Guardrails**: "Focus on manager visibility needs, don't expand to executive dashboards, must integrate with current data sources, prioritize actionable insights"
 
 **Enhanced Prompt**:
 
@@ -298,7 +298,7 @@ Business Context:
 **Techniques to Apply**:
 - **#2 Set Role and Context**: "You are a product leader presenting strategic roadmap decisions to diverse stakeholders with competing priorities"
 - **#5 Progressive Refinement**: "Start with business goals that drove decisions, then show how priorities create foundation for future requests, then address specific stakeholder concerns"
-- **#10 Set Clear Boundaries**: "Focus on strategic sequencing rationale, don't promise specific delivery dates for deferred items, must maintain confidence while showing flexibility criteria"
+- **#10 Set Clear Guardrails**: "Focus on strategic sequencing rationale, don't promise specific delivery dates for deferred items, must maintain confidence while showing flexibility criteria"
 
 **Enhanced Prompt**:
 
@@ -524,7 +524,7 @@ Business Context:
 
 **Techniques to Apply**:
 - **#2 Set Role and Context**: "You are an HR leader announcing performance system changes that need employee buy-in and enthusiasm rather than compliance"
-- **#10 Set Clear Boundaries**: "Focus on employee development benefits, don't oversell time savings, must address peer feedback concerns directly, prioritize growth over monitoring"
+- **#10 Set Clear Guardrails**: "Focus on employee development benefits, don't oversell time savings, must address peer feedback concerns directly, prioritize growth over monitoring"
 - **#4 Few-Shot Learning**: "Here are examples of successful vs failed change announcements: [show pattern of benefit-first messaging]. Apply this structure to performance review rollout."
 
 **Enhanced Prompt**:
