@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import KeywordsPage from './pages/KeywordsPage';
 import ProblemsPage from './pages/ProblemsPage';
 import TechniquesPage from './pages/TechniquesPage';
+import EngineeringProblemsPage from './pages/EngineeringProblemsPage';
 
 function NavigationTabs() {
   const location = useLocation();
@@ -14,7 +15,8 @@ function NavigationTabs() {
     { label: 'Home', path: '/' },
     { label: 'Keywords', path: '/keywords' },
     { label: 'Problems', path: '/problems' },
-    { label: 'Techniques', path: '/techniques' }
+    { label: 'Techniques', path: '/techniques' },
+    { label: 'Engineering Practice', path: '/engineering-problems' }
   ];
   
   return (
@@ -70,6 +72,7 @@ function App() {
           <Route path="/keywords" element={<KeywordsPage />} />
           <Route path="/problems" element={<ProblemsPage />} />
           <Route path="/techniques" element={<TechniquesPage />} />
+          <Route path="/engineering-problems" element={<EngineeringProblemsPage />} />
         </Routes>
       </Box>
     </Router>

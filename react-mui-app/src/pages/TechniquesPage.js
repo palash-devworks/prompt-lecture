@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Card, CardContent, Box, Divider, Grid, Chip } from '@mui/material';
+import { Container, Typography, Card, CardContent, Box, Grid, Chip } from '@mui/material';
 
 const principles = [
   "Treat AI Like a Junior Engineer - Give context, be specific about what you want, and set boundaries. Don't assume it knows your codebase or constraints.",

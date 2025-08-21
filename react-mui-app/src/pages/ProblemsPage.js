@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Typography, Accordion, AccordionSummary, AccordionDetails, Box, Chip, Button, Grid, Divider, Collapse } from '@mui/material';
+import { Container, Typography, Accordion, AccordionSummary, AccordionDetails, Box, Chip, Button, Grid, Collapse } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import DownloadIcon from '@mui/icons-material/Download';
