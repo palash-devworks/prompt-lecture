@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react
 import { AppBar, Toolbar, Typography, Container, Box, Tabs, Tab } from '@mui/material';
 import HomePage from './pages/HomePage';
 import KeywordsPage from './pages/KeywordsPage';
-import ProblemsPage from './pages/ProblemsPage';
+import QuestionsPage from './pages/QuestionsPage';
 import TechniquesPage from './pages/TechniquesPage';
 
 function NavigationTabs() {
@@ -13,8 +13,8 @@ function NavigationTabs() {
   const routes = [
     { label: 'Home', path: '/' },
     { label: 'Keywords', path: '/keywords' },
-    { label: 'Problems', path: '/problems' },
-    { label: 'Techniques', path: '/techniques' }
+    { label: 'Techniques', path: '/techniques' },
+    { label: 'Questions', path: '/questions' }
   ];
   
   return (
@@ -68,8 +68,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/keywords" element={<KeywordsPage />} />
-          <Route path="/problems" element={<ProblemsPage />} />
           <Route path="/techniques" element={<TechniquesPage />} />
+          <Route path="/questions" element={<QuestionsPage />} />
         </Routes>
       </Box>
     </Router>
