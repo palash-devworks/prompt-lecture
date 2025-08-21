@@ -62,3 +62,47 @@ The materials support a specific 60-minute session timeline:
 - 45-60 min: Q&A and assessment
 
 Any content changes should preserve this timing structure and learning progression.
+
+## Development Environment
+
+### React Application Structure
+The repository includes a React application (`react-mui-app/`) built with Create React App that serves as an interactive interface for the course materials.
+
+**Key Technologies:**
+- React 19.1.1 with functional components and hooks
+- Material-UI (MUI) 7.x for component library and theming
+- React Router 7.x for client-side routing
+- React Syntax Highlighter for code display
+- Standard Create React App toolchain
+
+**Application Architecture:**
+- `src/App.js` - Main app with router setup and navigation tabs
+- `src/pages/` - Page components following consistent patterns:
+  - `HomePage.js` - Simple centered "42" display
+  - `KeywordsPage.js` - Displays LLM terminology from `llm-keywords.md`
+  - `TechniquesPage.js` - Interactive techniques from `prompting-techniques.md`
+  - `ProblemsPage.js` - Complex accordion interface with download functionality for exercises
+- Navigation uses MUI Tabs component with React Router Link integration
+- Consistent MUI theming and responsive Container layout throughout
+
+### Common Development Commands
+
+**React Application (run from `react-mui-app/` directory):**
+```bash
+npm start          # Start development server (localhost:3000)
+npm test           # Run test suite in interactive mode
+npm run build      # Create production build
+```
+
+**File Management:**
+- Core course content is in markdown files at repository root
+- React app dynamically imports and displays this content
+- `ProblemsPage.js` includes sophisticated HTML download functionality for individual and bulk problem exports
+
+### Key Development Notes
+
+- Problems data is hardcoded in `ProblemsPage.js` with structured objects containing code examples, techniques, and prompts
+- Download functionality generates styled HTML files for offline use
+- Navigation state management uses React Router's `useLocation` hook
+- All pages follow consistent MUI Container + Typography patterns
+- Code syntax highlighting uses Prism with "tomorrow" theme
