@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import { AppBar, Toolbar, Typography, Container, Box, Tabs, Tab } from '@mui/material';
 import HomePage from './pages/HomePage';
 import KeywordsPage from './pages/KeywordsPage';
@@ -78,6 +79,7 @@ function App() {
           </Routes>
         </Box>
       </Box>
+      <Analytics />
     </Router>
   );
 }
