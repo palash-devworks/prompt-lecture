@@ -23,7 +23,17 @@ function NavigationTabs() {
   return (
     <Tabs 
       value={currentPath} 
-      sx={{ ml: 2 }}
+      variant="scrollable"
+      scrollButtons="auto"
+      sx={{ 
+        ml: 2,
+        '& .MuiTabs-scrollButtons': {
+          color: 'inherit'
+        },
+        '& .MuiTabs-scrollButtons.Mui-disabled': {
+          opacity: 0.3
+        }
+      }}
       textColor="inherit"
       indicatorColor="secondary"
     >
